@@ -53,7 +53,7 @@ function install_package_requirements {
 
     if [ -n "$packages_to_install" ]; then
         echo "Installing missing packages: $packages_to_install"
-        sudo apt update && sudo apt install -y $packages_to_install
+        apt update && apt install -y $packages_to_install
     fi
 }
 
@@ -123,12 +123,12 @@ function link_module {
 
 function restart_klipper {
     echo "[POST-INSTALL] Restarting Klipper..."
-    sudo systemctl restart klipper
+    systemctl restart klipper
 }
 
 function restart_moonraker {
     echo "[POST-INSTALL] Restarting Moonraker..."
-    sudo systemctl restart moonraker
+    systemctl restart moonraker
 }
 
 
