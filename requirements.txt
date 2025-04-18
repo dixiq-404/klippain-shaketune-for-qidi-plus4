@@ -1,4 +1,4 @@
-GitPython==3.1.41
+GitPython==0.1.7
 matplotlib==3.5.3
 numpy==1.21.6
 scipy==1.7.3
